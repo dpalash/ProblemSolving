@@ -6,8 +6,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Problems\Leader\" />
-    <Folder Include="Problems\StacksAndQueues\" />
+    <Compile Remove="Problems\Leader\**" />
+    <Compile Remove="Problems\StacksAndQueues\**" />
+    <EmbeddedResource Remove="Problems\Leader\**" />
+    <EmbeddedResource Remove="Problems\StacksAndQueues\**" />
+    <None Remove="Problems\Leader\**" />
+    <None Remove="Problems\StacksAndQueues\**" />
   </ItemGroup>
 
 </Project>
