@@ -16,12 +16,12 @@ namespace HackerRank.Problems.Interviews.Tessian
 
             int invalidCount = expressionSplits.Count(x => x == "0");
 
+            if (invalidCount > 0)
+                throw new Exception();
+
             int operatorCount = expressionSplits.Count(x => x == "+" || x == "-" || x == "*" || x == "/");
 
             int valueCount = expressionSplits.Count(x => x != "+" && x != "-" && x != "*" && x != "/");
-
-            if (invalidCount > 0)
-                throw new Exception();
 
             if (operatorCount > 0 && expressionSplits.Length < 3)
                 throw new Exception();
